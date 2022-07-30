@@ -1,0 +1,249 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+body {
+    font-size: 15px;
+    color: #666;
+    background-image: url('bg.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+#header{
+    display:flex;
+    padding-left:2px;
+    margin:0;
+    overflow: hidden;
+}
+#header img{
+    width:20%;
+    height:30vh;
+}
+input,
+option,
+textarea,
+select,
+button {
+    font-family: "Poppins-Regular";
+    font-size: 15px;
+    color: #666
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+.wrapper {
+    max-width: 600px;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center
+}
+
+.wrapper .image-holder {
+    width: 51%
+}
+
+.wrapper form {
+    width: 100%
+}
+
+.wizard>.steps .current-info,
+.wizard>.steps .number {
+    display: none
+}
+
+#wizard {
+    min-height: 570px;
+    background: #fff;
+    margin-right: 60px;
+    padding: 107px 75px 65px;
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.steps {
+    margin-bottom: 30px
+}
+
+.steps ul {
+    display: flex;
+    position: relative
+}
+
+.steps ul li {
+    width: 25%;
+    margin-right: 10px
+}
+
+.steps ul li a {
+    display: inline-block;
+    width: 100%;
+    height: 7px;
+    background: #e6e6e6;
+    border-radius: 3.5px
+}
+
+.steps ul li.first a,
+.steps ul li.checked a {
+    background: #6645eb;
+    transition: all 0.5s ease
+}
+
+.steps ul:before {
+    content: "Customer Details";
+    font-size: 22px;
+    font-family: "Poppins-SemiBold";
+    color: #333;
+    top: -38px;
+    position: absolute
+}
+
+.steps ul.step-2:before {
+    content: "Additional Info"
+}
+
+.steps ul.step-3:before {
+    content: "Your Order"
+}
+
+.steps ul.step-4:before {
+    content: "Billing Method"
+}
+
+h3 {
+    font-family: "Poppins-SemiBold"
+}
+
+.form-row {
+    margin-bottom: 24px
+}
+
+.form-row label {
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-row.form-group {
+    display: flex;
+}
+
+.form-row.form-group .form-holder {
+    width: 50%;
+    margin-right: 21px
+}
+
+.form-holder {
+    position: relative
+}
+
+@media (max-width: 1500px) {
+    
+    #header img{
+        width:90%;
+        height:30vh;
+    }
+    #header{
+        display:inline;
+    }
+    .wrapper {
+        height: auto
+    }
+}
+
+@media (max-width: 1199px) {
+    
+    #header img{
+        width:90%;
+        height:30vh;
+    }
+    #header{
+        display:inline;
+    }
+    .wrapper {
+        height: 100vh
+    }
+
+    #wizard {
+        margin-right: 40px;
+        min-height: 829px;
+        padding-left: 60px;
+        padding-right: 60px
+    }
+}
+
+@media (max-width: 991px) {
+    
+    #header img{
+        width:90%;
+        height:30vh;
+    }
+    #header{
+        display:inline;
+    }
+    .wrapper {
+        justify-content: center
+    }
+
+    .wrapper .image-holder {
+        display: none
+    }
+
+    .wrapper form {
+        width: 60%
+    }
+
+    #wizard {
+        margin-right: 0;
+        padding-left: 40px;
+        padding-right: 40px
+    }
+}
+
+@media (max-width: 767px) {
+    #header{
+        display:inline;
+    }
+    #header img{
+        width:90%;
+        height:30vh;
+    }
+    .wrapper {
+        height: auto;
+        display: block
+    }
+
+    .wrapper .image-holder {
+        width: 100%;
+        display: block
+    }
+
+    .wrapper form {
+        width: 100%
+    }
+
+    #wizard {
+        min-height: unset;
+        padding: 70px 20px 40px
+    }
+
+    .form-row.form-group {
+        display: block
+    }
+
+    .form-row.form-group .form-holder {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 24px
+    }
+
+    .item .purchase {
+        margin-left: 11px
+    }
+}
